@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:expense_tracker/model/expense.dart';
+import 'package:momento/model/expense.dart';
 
 class ChartBar extends StatelessWidget {
   const ChartBar({
@@ -18,7 +18,7 @@ class ChartBar extends StatelessWidget {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
     final colorScheme = Theme.of(context).colorScheme;
     final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
-    double multiplier = (isPortrait)? 0.6:0.1;
+    double multiplier = (isPortrait)? 0.6: 0.4;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       
